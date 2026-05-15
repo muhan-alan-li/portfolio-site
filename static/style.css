@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500&display=swap');
+
+:root {
+  --bg: #f0edf6;
+  --surface: #e8e3f0;
+  --text: #1a1a2e;
+  --text-muted: #6b6880;
+  --accent: #7c6fa0;
+  --sidebar-width: 160px;
+}
+
+[data-theme="dark"] {
+  --bg: #13111a;
+  --surface: #1e1b27;
+  --text: #e8e3f0;
+  --text-muted: #9992b0;
+  --accent: #a899cc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.6;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* ── Header ── */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--surface);
+}
+
+header h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+/* ── Theme toggle ── */
+#theme-toggle {
+  background: none;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ── Layout ── */
+.container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  position: sticky;
+  top: 40px;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sidebar ul ul {
+  margin-top: 0.3rem;
+  margin-left: 0.8rem;
+}
+
+.sidebar a {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: var(--accent);
+}
+
+/* ── Main content ── */
+main {
+  flex: 1;
+  min-width: 0;
+}
+
+main h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+main p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+main a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
