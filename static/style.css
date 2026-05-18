@@ -129,3 +129,25 @@ main a {
 main a:hover {
   text-decoration: underline;
 }
+
+/* ── Footer ── */
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--surface);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.social-icon:hover {
+  color: var(--accent);
+}
