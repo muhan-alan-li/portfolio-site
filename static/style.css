@@ -119,6 +119,11 @@ main h1 {
 main p {
   color: var(--text-muted);
   font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+main p:last-child {
+  margin-bottom: 0;
 }
 
 main a {
