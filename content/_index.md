@@ -8,4 +8,4 @@ My first computer was the family PC that ran windows xp. Then in seventh grade I
 
 What I value most is building software that's well designed, intuitive, and actually solves real problems.
 
-Across three internships, I owned the development of end to end features for enterprise, academic, and and consumer users. Most recently, at Apera AI, I delivered full-stack work spanning React, Flask, and AWS for a cloud robotics simulation platform. Whether its 3D visualization to distributed asset orchestration. I ship features with the user in mind and am looking for a team where I can keep doing that at scale.
+Across three internships, I owned the development of end to end features for enterprise, academic, and and consumer users. At my most recent internship with Apera, I shipped features with a focus on creating reliable and repeatable outcomes. Ultimately, no matter the tech stack, I work with the end user in mind, and I'm looking for a team where I can continue to do that at scale.
