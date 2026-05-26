@@ -1,4 +1,7 @@
 <nav class="sidebar">
+    <a href="{{ .Site.Home.RelPermalink }}">
+        <img src="{{ "muhan.png" | relURL }}" alt="Muhan Li" class="sidebar-avatar" />
+    </a>
     <ul>
         <li><a href="{{ .Site.Home.RelPermalink }}"{{ if .IsHome }} class="active"{{ end }}>About</a></li>
         <li><a href="{{ "resume.pdf" | relURL }}" target="_blank">Resume</a></li>
