@@ -1,5 +1,6 @@
 ---
 title: "writing"
+draft: true
 menu:
   main:
     name: "writing"
