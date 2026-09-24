@@ -1,3 +1,22 @@
 baseURL = "https://muhanli.ca/"
-locale = "en-us"
 title = "Muhan Li"
+locale = "en-us"
+enableRobotsTXT = true
+
+# No tags/categories — keep output to pages only
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+[params]
+  description = "Muhan Li — software engineer based in Vancouver, BC."
+
+# Nav items are declared in each section's _index.md frontmatter
+# (content/writing/_index.md, content/experience/_index.md).
+# To add a section later (e.g. photography), copy that pattern.
+
+[markup]
+  [markup.highlight]
+    style = "friendly"
+    lineNos = true
+    lineNumbersInTable = false
+    codeFences = true

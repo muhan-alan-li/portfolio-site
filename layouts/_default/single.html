@@ -1,3 +1,7 @@
 {{ define "main" }}
-{{ .Content }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ with .Date }}{{ if not .IsZero }}<p><time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time></p>{{ end }}{{ end }}
+  {{ .Content }}
+</article>
 {{ end }}
