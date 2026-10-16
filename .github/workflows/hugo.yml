@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -28,6 +29,22 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: latest
+
+      # Keep the CLI repository as the single source for installer scripts.
+      # A site deployment (or manual workflow run) refreshes both public URLs.
+      - name: Fetch CLI installers
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          installer_ref=$(gh api repos/muhan-alan-li/muhancli/releases/latest --jq .tag_name)
+          for script in install.sh install.ps1; do
+            curl --proto '=https' --tlsv1.2 -fsSL --retry 3 \
+              "https://raw.githubusercontent.com/muhan-alan-li/muhancli/$installer_ref/$script" \
+              -o "static/$script"
+          done
+          sh -n static/install.sh
+          echo "Installer source: $installer_ref" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Build
         run: hugo

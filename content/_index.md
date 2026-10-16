@@ -11,3 +11,31 @@ Across three internships, I owned the development of features end to end for ent
 Outside of work, you might find me competing in ultimate frisbee, indoor bouldering with friends, playing boardgames, or trying out new restaurants.
 
 I'm always happy to chat about anything, please feel free to reach out to me through muhanli.work [at] gmail.com or my Linkedin :)
+
+## Try my portfolio in your terminal
+
+Explore my experience, projects, and skills with `muhan`, a small command-line app.
+Install it with one command. Tab completion is set up automatically.
+
+**Linux or macOS**
+
+```sh
+curl -fsSL https://muhanli.ca/install.sh | bash
+```
+
+**Windows PowerShell**
+
+```powershell
+Invoke-RestMethod https://muhanli.ca/install.ps1 | Invoke-Expression
+```
+
+After installing, open a new terminal and try:
+
+```sh
+muhan
+muhan experience
+muhan projects
+```
+
+You can [read the Bash installer](/install.sh), [read the PowerShell installer](/install.ps1),
+or [browse the source on GitHub](https://github.com/muhan-alan-li/muhancli).

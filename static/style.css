@@ -107,3 +107,22 @@ footer {
 .social-icons a:hover {
   color: #222;
 }
+
+/* Keep terminal commands readable within the text column on small screens. */
+main h2 {
+  font-size: 1.2rem;
+  margin: 2rem 0 1rem;
+}
+
+main pre {
+  overflow-x: auto;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+main code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
