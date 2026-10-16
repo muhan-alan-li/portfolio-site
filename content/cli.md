@@ -1,9 +1,9 @@
 ---
-title: "CLI"
+title: "cli"
 url: /cli/
 menu:
   main:
-    name: "CLI"
+    name: "cli"
     weight: 4
 ---
 
