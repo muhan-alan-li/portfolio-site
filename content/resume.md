@@ -5,7 +5,7 @@ layout: redirect
 menu:
   main:
     name: "resume"
-    weight: 3
+    weight: 4
 ---
 
 Redirects to the PDF resume.

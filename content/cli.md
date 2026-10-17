@@ -4,7 +4,7 @@ url: /cli/
 menu:
   main:
     name: "cli"
-    weight: 4
+    weight: 5
 ---
 
 Explore my experience, projects, and skills with `muhan`, a small command-line app.
