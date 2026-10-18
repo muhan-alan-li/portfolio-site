@@ -3,7 +3,10 @@
 {{ .Content }}
 <ul class="post-list">
   {{ range .Pages.ByWeight }}
-  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ with .Params.summary }}<p class="experience-summary">{{ . }}</p>{{ end }}
+  </li>
   {{ end }}
 </ul>
 {{ end }}
