@@ -4,3 +4,4 @@ public/
 *.swo
 *~
 .DS_Store
+.local/
