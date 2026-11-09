@@ -13,17 +13,9 @@ ignoreErrors = ["error-disable-taxonomy"]
 # Nav items are declared in content frontmatter and in the menu below.
 # To add a section later (e.g. photography), copy that pattern.
 
-[[menus.main]]
-  name = "experience"
-  identifier = "experience"
-  url = "/experience/"
-  weight = 2
-
-[[menus.main]]
-  name = "projects"
-  identifier = "projects"
-  url = "/projects/"
-  weight = 3
+# Draft sections (experience, projects, writing) declare their own menu
+# entries in content frontmatter. They stay out of production until their
+# write-ups are ready.
 
 [markup]
   [markup.highlight]

@@ -1,5 +1,6 @@
 ---
 title: "Software Engineer Intern @ Apera AI"
+draft: true
 weight: 1
 summary: "I worked at Apera AI for 8 months before graduating in May 2026. I worked in a full stack role, the main tech stack is Typescript, React, Python, Flask, AWS, and Docker. In my work and collaboration with others, I also learned about robotics and computer vision basics."
 ---
