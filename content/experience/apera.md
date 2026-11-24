@@ -1,6 +1,5 @@
 ---
 title: "Software Engineer Intern @ Apera AI"
-draft: true
 weight: 1
 summary: "I worked on the asset team at Apera AI, shipping end-to-end features for Apera Forge, a web portal for training and evaluating computer vision models."
 ---
