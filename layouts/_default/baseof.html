@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}" />{{ end }}
+    <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}" />
     {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel=%q type=%q href=%q title=%q />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
